@@ -1,8 +1,29 @@
 # read_helper
 
-小说阅读助手：按章节拆分、生成摘要、向量入库（Qdrant），并支持基于「读到的章节」提问（向量检索或摘要作为背景）。
+一个面向小说读者的智能阅读助手。
+
+它能够根据用户当前的阅读进度，精准回答与剧情、人物、伏笔相关的问题，并严格控制回答范围，避免提前透露后续情节，真正做到“**只回答你现在该知道的内容**”。
+
+无论是回忆前文细节、梳理人物关系，还是理解复杂剧情发展，阅读助手都能像一位贴心的陪读伙伴，在不破坏阅读体验的前提下提供帮助。
+
+**核心目标不是简单地“回答问题”，而是让读者在保持探索感和沉浸感的同时，更轻松地享受阅读本身**
+
+支持按章节拆分、生成摘要、向量入库（Qdrant），并支持基于「读到的章节」提问（向量检索或摘要作为背景）。
 
 ---
+
+## 效果示例
+以《天龙八部》为例，原著中在第12章，段誉第一次遇到王语嫣。据此，我们两次不同阅读进度下的提问会给出不同的响应结果。
+<img width="1716" height="256" alt="image" src="https://github.com/user-attachments/assets/d8b8e7e4-58b2-49e3-aa9c-836f87034bd5" />
+
+同样以《天龙八部》为例，询问段誉生父。
+<img width="1238" height="174" alt="image" src="https://github.com/user-attachments/assets/7f2d9b42-889a-4289-a0a4-9c7f696bfb50" />
+回答上面问题时所使用的摘要文件
+<img width="1714" height="1518" alt="image" src="https://github.com/user-attachments/assets/2ca439a3-dbc6-4ab1-bd08-3041f983fa01" />
+
+
+
+
 
 ## 环境要求
 
@@ -195,9 +216,5 @@ go run . world book_chapters/xxx        # 指定书目录
    `go run . serve 8080`  
    然后对 `http://localhost:8080/ask` 发 POST，body 带 `book`、`chapter`、`question`（及可选 `source`）。
 
-
-## 效果示例
-以天龙八部为例，原著中在第12章，段誉第一次遇到王语嫣。据此，我们两次不同阅读进度下的提问会给出不同的响应结果。
-<img width="1716" height="256" alt="image" src="https://github.com/user-attachments/assets/d8b8e7e4-58b2-49e3-aa9c-836f87034bd5" />
 
 
