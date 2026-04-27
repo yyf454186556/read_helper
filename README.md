@@ -13,10 +13,10 @@
 ---
 
 ## 效果示例
-以《天龙八部》为例，原著中在第12章，段誉第一次遇到王语嫣。据此，我们两次不同阅读进度下的提问会给出不同的响应结果。
+以《天龙八部》为例，原著中在第12章，段誉第一次遇到王语嫣。据此，我们两次不同阅读进度下的提问会给出不同的响应结果。第5章时还没有遇到王语嫣，15章时王语嫣已经出场。
 <img width="1716" height="256" alt="image" src="https://github.com/user-attachments/assets/d8b8e7e4-58b2-49e3-aa9c-836f87034bd5" />
 
-同样以《天龙八部》为例，询问段誉生父。
+同样以《天龙八部》为例，询问段誉生父。25章时还不知道段誉的真实身世。50章时已经真相大白。
 <img width="1238" height="174" alt="image" src="https://github.com/user-attachments/assets/7f2d9b42-889a-4289-a0a4-9c7f696bfb50" />
 回答上面问题时所使用的摘要文件
 <img width="1714" height="1518" alt="image" src="https://github.com/user-attachments/assets/2ca439a3-dbc6-4ab1-bd08-3041f983fa01" />
