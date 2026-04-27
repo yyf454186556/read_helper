@@ -194,3 +194,10 @@ go run . world book_chapters/xxx        # 指定书目录
 4. **用 HTTP 给前端/其他服务用**  
    `go run . serve 8080`  
    然后对 `http://localhost:8080/ask` 发 POST，body 带 `book`、`chapter`、`question`（及可选 `source`）。
+
+
+## 效果示例
+以天龙八部为例，原著中在第12章，段誉第一次遇到王语嫣。据此，我们两次不同阅读进度下的提问会给出不同的响应结果。
+<img width="1716" height="256" alt="image" src="https://github.com/user-attachments/assets/d8b8e7e4-58b2-49e3-aa9c-836f87034bd5" />
+
+
