@@ -1,0 +1,39 @@
+{
+  "dir": {
+    "input_dir": "book_resource",
+    "output_dir": "book_chapters",
+    "summary_dir_name": "abstracts",
+    "world_dir_name": "world",
+    "summary_demo_chapter_dir": "book_chapters/yongzhengwangchao_utf8"
+  },
+  "qdrant": {
+    "host": "localhost",
+    "port": 6334,
+    "collection": "read_helper",
+    "vector_size": 2048
+  },
+  "embedding": {
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3/embeddings/multimodal",
+    "model": "doubao-embedding-vision-251215",
+    "batch_size": 1,
+    "max_retries": 3,
+    "retry_delay_seconds": 2,
+    "max_chunk_runes": 1500
+  },
+  "llm": {
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+    "model": "doubao-seed-1-6-lite-251015",
+    "event_log_path": "event.log",
+    "fallback_model": "doubao-seed-1-6-251015",
+    "fallback_base_url": "https://ark.cn-beijing.volces.com/api/v3"
+  },
+  "serve": {
+    "default_port": 8080
+  },
+  "summary": {
+    "concurrency": 10
+  },
+  "vector_search": {
+    "default_limit": 10
+  }
+}
